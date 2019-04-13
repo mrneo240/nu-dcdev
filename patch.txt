@@ -1,0 +1,14 @@
+56c56
+< pass2_languages=c,c++,objc,obj-c++
+---
+> pass2_languages=c,c++
+167c167
+< 	$(MAKE) -C $(build) install DESTDIR=$(DESTDIR) $(to_log)
+---
+> 	$(MAKE) -C $(build) install-strip DESTDIR=$(DESTDIR) $(to_log)
+205c205
+< 	$(MAKE) -C $(build) install DESTDIR=$(DESTDIR) $(to_log)
+---
+> 	$(MAKE) -C $(build) install-strip DESTDIR=$(DESTDIR) $(to_log)
+
+
