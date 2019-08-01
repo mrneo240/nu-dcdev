@@ -32,7 +32,7 @@ RUN cp /opt/toolchains/dc/kos/doc/environ.sh.sample /opt/toolchains/dc/kos/envir
 # Build Toolchain
 RUN bash download.sh && \
 	bash unpack.sh && \
-	make erase=1 && \
+	make erase=1 patch build gdb && \
 	bash cleanup.sh
 
 WORKDIR /opt/toolchains/dc/kos/utils/kmgenc 
